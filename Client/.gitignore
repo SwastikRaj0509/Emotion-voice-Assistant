@@ -1,0 +1,8 @@
+# In your project root, create .gitignore with:
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+emotion_model.pth
+.DS_Store

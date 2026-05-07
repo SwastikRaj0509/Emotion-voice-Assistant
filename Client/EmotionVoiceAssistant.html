@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AskMitr - Emotion Voice Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <div class="logo-section">
+        <div class="logo">🎤</div>
+        <div class="title-group">
+          <h1>AskMitr</h1>
+          <p class="subtitle">Emotion-Aware AI Assistant</p>
+        </div>
+      </div>
+      
+      <div class="status-bar">
+        <div class="emotion-display">
+          <span class="emotion-label">Emotion:</span>
+          <span class="emotion-value" id="emotion-status">🤔 Neutral</span>
+        </div>
+        <div class="status-indicator" id="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Chat Box -->
+    <div class="chat-container">
+      <div id="chat-box" class="chat-box"></div>
+      
+      <!-- Microphone Button -->
+      <div class="mic-section">
+        <button id="talk" class="mic-button" title="Click to start talking">
+          <span class="mic-icon">🎙️</span>
+          <span class="mic-text">Start Talking</span>
+          <span class="pulse"></span>
+        </button>
+        <p class="mic-hint" id="mic-hint">Click the microphone and speak clearly</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video (hidden) -->
+<video id="video" autoplay playsinline style="display:none;"></video>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
